@@ -22,7 +22,7 @@ NoSQL databases emerged in the late 2000s to address scalability, flexibility, a
 ## Are Document Databases Repeating History?
 Document databases resemble the hierarchical model (e.g., XML, JSON), which was popular before relational databases. However, they address some limitations of the hierarchical model by allowing more flexible schemas.
 
-### The network mode
+### The network model
 - The network model (pre-relational) represented data as a graph of records connected by pointers. It was complex and rigid.
 
 ### The relational model
