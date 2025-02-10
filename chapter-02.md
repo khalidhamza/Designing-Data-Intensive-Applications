@@ -91,7 +91,7 @@ Document databases resemble the hierarchical model (e.g., XML, JSON), which was 
 > - Query languages play a critical role in how data is accessed and manipulated, with declarative languages offering simplicity and optimization benefits.
 > - The evolution of data models reflects a trade-off between flexibility, scalability, and complexity, with ongoing convergence between relational and non-relational systems.
 
-# Summary
+# Data Model Comparison
 | **Aspect**               | **Relational Model**                                                                 | **Document Model**                                                                 | **Graph Model**                                                                 |
 |--------------------------|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | **Structure**            | Tables with rows and columns.                                                       | Flexible, semi-structured (e.g., JSON, XML).                                      | Nodes (entities) and edges (relationships).                                    |
@@ -107,3 +107,22 @@ Document databases resemble the hierarchical model (e.g., XML, JSON), which was 
 - **Relational Model**: Best for structured data and systems requiring strong consistency and complex queries.
 - **Document Model**: Great for flexible, hierarchical data and use cases requiring fast iteration and scalability.
 - **Graph Model**: Perfect for highly interconnected data and scenarios where relationships are central to the application.
+
+
+# Declarative Vs. Imperative Query Languages
+| **Aspect**               | **Declarative Query Languages**                                                                 | **Imperative Query Languages**                                                                 |
+|--------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **Definition**           | Specify **what** data to retrieve or manipulate, not **how** to do it.                        | Specify **how** to retrieve or manipulate data, step by step.                                 |
+| **Examples**             | - SQL (Structured Query Language)<br>- Cypher (Neo4j)<br>- SPARQL (RDF)                       | - MapReduce<br>- Gremlin (graph traversals)<br>- Custom scripting in programming languages    |
+| **Ease of Use**          | Easier to write and understand; focus on the result, not the process.                         | More complex; requires detailed instructions for data processing.                             |
+| **Optimization**         | The database engine optimizes the query execution automatically.                              | Optimization is the responsibility of the developer.                                          |
+| **Flexibility**          | Limited to the capabilities of the query language and database engine.                        | Highly flexible; can implement custom logic and workflows.                                    |
+| **Performance**          | Often more efficient due to built-in optimizations in the database engine.                    | Performance depends on the quality of the implementation; can be less efficient if not optimized. |
+| **Use Cases**            | - Standard database queries<br>- Complex joins and aggregations<br>- Declarative data analysis | - Custom data processing pipelines<br>- Complex graph traversals<br>- Distributed data processing (e.g., MapReduce) |
+| **Examples in DBMS**     | - SQL in PostgreSQL, MySQL<br>- Cypher in Neo4j<br>- SPARQL in RDF triple-stores               | - MapReduce in Hadoop<br>- Gremlin in Apache TinkerPop<br>- Custom scripts in MongoDB         |
+
+---
+
+### **Key Notes**:
+- **Declarative languages** are ideal for standard queries and scenarios where the database engine can handle optimization.
+- **Imperative languages** are better for custom logic, complex workflows, and distributed data processing where fine-grained control is needed.
