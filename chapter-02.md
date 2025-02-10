@@ -91,7 +91,7 @@ Document databases resemble the hierarchical model (e.g., XML, JSON), which was 
 > - Query languages play a critical role in how data is accessed and manipulated, with declarative languages offering simplicity and optimization benefits.
 > - The evolution of data models reflects a trade-off between flexibility, scalability, and complexity, with ongoing convergence between relational and non-relational systems.
 
-### Summary
+# Summary
 | **Aspect**               | **Relational Model**                                                                 | **Document Model**                                                                 | **Graph Model**                                                                 |
 |--------------------------|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | **Structure**            | Tables with rows and columns.                                                       | Flexible, semi-structured (e.g., JSON, XML).                                      | Nodes (entities) and edges (relationships).                                    |
