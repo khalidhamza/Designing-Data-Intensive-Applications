@@ -91,3 +91,20 @@ Document databases resemble the hierarchical model (e.g., XML, JSON), which was 
 > - Query languages play a critical role in how data is accessed and manipulated, with declarative languages offering simplicity and optimization benefits.
 > - The evolution of data models reflects a trade-off between flexibility, scalability, and complexity, with ongoing convergence between relational and non-relational systems.
 
+### Summary
+
+| **Aspect**               | **Relational Model**                                                                 | **Document Model**                                                                 | **Graph Model**                                                                 |
+|--------------------------|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| **Structure**            | Tables with rows and columns.                                                       | Flexible, semi-structured (e.g., JSON, XML).                                      | Nodes (entities) and edges (relationships).                                    |
+| **Query Languages**      | SQL (Structured Query Language).                                                    | MongoDB Query Language, Couchbase N1QL.                                           | Cypher (Neo4j), SPARQL (RDF), Gremlin.                                         |
+| **Pros**                 | - Strong consistency.<br>- ACID transactions.<br>- Powerful joins for relationships. | - Schema flexibility.<br>- Better for hierarchical/nested data.<br>- Scalability. | - Ideal for complex relationships.<br>- Intuitive for interconnected data.    |
+| **Cons**                 | - Object-relational mismatch.<br>- Less flexible schema.<br>- Scaling challenges.    | - Limited support for joins.<br>- Weaker consistency guarantees.                  | - Not ideal for tabular data.<br>- Can be complex for simple queries.          |
+| **Suitable Use Cases**   | - Transactional systems (e.g., banking).<br>- Complex queries with joins.            | - Content management.<br>- Real-time analytics.<br>- Evolving schemas.            | - Social networks.<br>- Recommendation systems.<br>- Fraud detection.         |
+
+---
+
+### **Key Notes**:
+- **Relational Model**: Best for structured data and systems requiring strong consistency and complex queries.
+- **Document Model**: Great for flexible, hierarchical data and use cases requiring fast iteration and scalability.
+- **Graph Model**: Perfect for highly interconnected data and scenarios where relationships are central to the application.
+
